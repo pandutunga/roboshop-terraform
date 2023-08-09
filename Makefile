@@ -3,8 +3,7 @@ dev:
     @terraform inti
     @terraform apply -auto-approve -var-file=env-dev/main.tfvars
 
-
-Prod:
+prod:
     @rm -rf .terraform
     @terraform inti
-    @terraform apply -auto-approve -var-file=env-dev/main.tfvars
+    @terraform apply -auto-approve -var-file=env-prod/main.tfvars
