@@ -4,3 +4,4 @@ module "instances" {
   component = each.key
   env = var.env
 }
+
